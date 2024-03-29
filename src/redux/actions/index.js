@@ -27,6 +27,8 @@ export const getSearchedAction = (music) => {
   };
 };
 
+// --------------------------
+// PROVA
 // export const getArtistHome = (singer) => {
 //   return (dispatch, getState) => {
 //     fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${singer}`, {

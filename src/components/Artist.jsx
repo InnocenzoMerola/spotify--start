@@ -53,6 +53,8 @@ const Artist = function ({ singer }) {
 };
 export default Artist;
 
+// --------------------------------------------
+// PROVA
 // Artist = function ({ singer }) {
 //   const artHome = useSelector((state) => state.ricercati.artistHome);
 
