@@ -1,8 +1,10 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Artist from "./Artist";
+import { useSelector } from "react-redux";
 
-const MyMain = function ({ setResults, results }) {
+const MyMain = function () {
+  const results = useSelector((state) => state.ricercati.artistSearch);
   return (
     <Col xs={12} md={9} className="offset-md-3 mainPage px-3">
       <Row>
@@ -16,8 +18,10 @@ const MyMain = function ({ setResults, results }) {
       </Row>
       <Row>
         <Col xs={10}>
-          {results.length === 0 ? (
-            <div id="searchResults" style={{ display: "none" }}></div>
+          {results && results.length === 0 ? (
+            <>
+              <div id="searchResults" style={{ display: "none" }}></div>
+            </>
           ) : (
             <div id="searchResults">
               <h2>Search Results</h2>

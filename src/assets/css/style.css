@@ -117,8 +117,8 @@ ul {
 
 .progress {
   color: white;
-  background-color: #414141;
-  height: 3px;
+  background-color: #414141 !important;
+  height: 3px !important;
 }
 
 @media screen and (min-width: 1200px) {
